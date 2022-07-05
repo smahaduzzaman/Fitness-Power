@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.header-area {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-logo {}
+
+.header-logo h1 {
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.8s;
+}
+
+.header-nav ul li a:hover {
+    color: red;
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"), auto;
+}
+
+.hero-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-title {
+    margin-left: 50px;
+}
+
+.color-text {
+    color: red;
+    font-size: 30px;
+}
+
+.hero-title h1 {
+    margin: 20px 0;
+    font-size: 80px;
+}
+
+.hero-title p {
+    font-size: 20px;
+}
+
+.hero-bg {}
+
+.hero-bg img {
+    width: 100%;
+    height: auto;
+}
+
+.fitness-btn {
+    padding: 20px 40px;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.fitness-btn:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.hero-para {
+    margin-bottom: 50px;
+}
