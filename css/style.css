@@ -24,11 +24,36 @@ body {}
     margin-bottom: 100px;
 }
 
-.header-logo {}
+.logo-text {
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: .10em solid #FF8D8D;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin: 0 auto;
+    letter-spacing: .4rem;
+    animation: typing_text 3s steps(30, end), cursor-animate 1s step-end infinite;
+}
 
-.header-logo h1 {
-    text-transform: capitalize;
-    font-size: 50px;
+@keyframes typing_text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor-animate {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #FF8D8D;
+    }
 }
 
 .header-nav {
@@ -37,20 +62,22 @@ body {}
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-right: 80px;
 }
 
 .header-nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
+
+.header-nav ul {}
 
 .header-nav ul li {
     list-style: none;
     margin: 0 10px;
+    padding-left: 10px;
 }
 
 .header-nav ul li a {
@@ -58,6 +85,7 @@ body {}
     color: #fff;
     font-size: 20px;
     transition: 0.8s;
+    text-transform: uppercase;
 }
 
 .header-nav ul li a:hover {
@@ -103,6 +131,7 @@ body {}
     background-color: red;
     color: #fff;
     font-size: 20px;
+    font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
     transition: 0.3s;
@@ -240,12 +269,188 @@ body {}
     font-size: 18px;
 }
 
-.feature-right ul {
+.feature-right ol {
     margin-left: 20px;
     margin-bottom: 50px;
 }
 
-.feature-right ul li {
+.feature-right ol li {
     line-height: 35px;
     font-size: 22px;
+}
+
+.cta-area {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    background: url("../images/shape/Group_33094_1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.cta {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+
+.cta-title {
+    width: 60%;
+}
+
+.cta-title h5 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cta-button {
+    width: 40%;
+    text-align: right;
+}
+
+.cta-button a {}
+
+.services-area {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.service-title {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service-title h5 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.services {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.service-single {
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 20px #000;
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    padding: 20px 20px 0 20px;
+}
+
+.card-title h6 {
+    margin-bottom: 10px;
+    color: red;
+    font-size: 20px;
+}
+
+.card-title h2 {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.card-title p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    padding: 0 20px 20px 20px;
+}
+
+.card-price h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-price a {
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 8px;
+}
+
+.footer-area {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid #000;
+    padding: 50px 0;
+}
+
+.footer-social ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-social ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.footer-social ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.footer-social ul li a:hover {
+    color: red;
+}
+
+.copyright {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.color-footer {
+    color: red;
+    font-weight: bold;
 }
